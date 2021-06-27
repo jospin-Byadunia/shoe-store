@@ -1,0 +1,124 @@
+*,
+*::before,
+*::after{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    font-family: 'Note Sans JP', sans-serif;
+    line-height: 1.6;
+}
+img{
+    max-width: 100%;
+    /*height: auto;*/
+    display: block;
+}
+.main-content{
+    color: black;
+    text-align: center;
+     padding: 15em 0;
+    background-color: sandybrown;
+    background-blend-mode: li; 
+    background: url(pexels-ox-street-5710086.jpg) , radial-gradient(#111, #444);
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center center;
+} 
+.btn{
+    color: white;
+    font-weight: 700;
+    font-size: 1.125rem;
+    text-transform: uppercase;
+    background-color: blue;
+    padding: 0.5em 1.25em;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: .25em;
+    transition:
+     transform 250ms ease-in-out ,
+     opacity 250ms linear;
+}
+.btn:hover,
+.btn:focus {
+    transform: scale(1.1);
+    opacity: 0.9;
+}
+.container2 h2{
+    text-align: center;
+    font-size: 2.5rem;
+}
+.shoes1{
+    display: flex;
+    gap: 1em;
+    /* flex-wrap: wrap;
+    flex-direction: row; */
+    justify-content: center;
+   
+}
+.items-1{
+    color: #333;
+    text-decoration: none;
+    text-align: center;
+    display: block;
+    position: relative;transform: scale(.85);
+    transition: transform 250ms ease-in-out;
+}
+.items-1 span{
+    display: block;
+    font-weight: 700;
+    font-size: 2rem;
+}
+.items-1:hover, .items-1:focus{
+    transform: scale(1);
+}
+.product{
+    background: radial-gradient(rgb(206, 49, 49), rgb(26, 73, 4));
+    padding: 3em;
+    border-radius: 3em;
+    margin: 0 4em 3em 4em;
+    text-align: center;
+}
+.product-title{
+    font-size: 4rem;
+    line-height: 1.1;
+    color: #fff;
+    text-shadow: 0 0 0.2rem(rgb(#000, .2));
+}
+.product-image{
+    margin: -5em 0 0 0;
+}
+.container3 h2{
+    text-align: center;
+    font-size: 2.5rem;
+}
+footer{
+    text-align: center;
+}
+@media  screen and (max-width : 45em) {
+    .shoes1{
+        display: flex;
+        gap: 1em;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .product-image{
+        margin: 0 0 0 0;
+        float: right;
+        width: 65%;
+        text-align: left;
+    }
+    .product{
+        background: radial-gradient(rgb(206, 49, 49), rgb(26, 73, 4));
+        padding: 3em;
+        border-radius: 3em;
+        margin: 0 2em 1em 2em;
+        text-align: center;
+    }
+    .product-title{
+        font-size: 2.5rem;
+        line-height: 1.1;
+        color: #fff;
+        text-shadow: 0 0 0.2rem(rgb(#000, .2));
+    }
+}
